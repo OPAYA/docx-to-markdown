@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://docx-md-convertor-2wat4isdm-juntaes-projects-1e3504c3.vercel.app/sitemap.xml
+Sitemap: https://www.docx2md.dev/sitemap.xml
 
 # Block any tracking or analytics crawling
 Disallow: /_next/

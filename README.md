@@ -1,6 +1,6 @@
 # DOCX to Markdown Converter - Free Online Tool
 
-🚀 **Live Demo:** [docx-to-markdown.vercel.app](https://docx-md-convertor-2wat4isdm-juntaes-projects-1e3504c3.vercel.app)
+🚀 **Live Demo:** [www.docx2md.dev](https://www.docx2md.dev)
 
 A powerful, privacy-focused web application that converts Microsoft Word (.docx) files to clean, Git-friendly Markdown format entirely in your browser. **No file uploads required** - all processing happens locally for maximum security and privacy.
 
