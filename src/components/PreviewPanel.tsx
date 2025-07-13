@@ -20,8 +20,7 @@ export default function PreviewPanel({ result, isConverting, onReset }: PreviewP
   marked.setOptions({
     gfm: true, // GitHub Flavored Markdown
     breaks: true, // Convert \n to <br>
-    tables: true, // Enable table support
-    sanitize: false, // Allow HTML (for better rendering)
+    // tables: true, // Tables are enabled by default in GFM
   });
 
   const handleCopyMarkdown = async () => {

@@ -16,7 +16,7 @@ turndownService.addRule('lineBreak', {
 
 turndownService.addRule('image', {
   filter: 'img',
-  replacement: (content, node) => {
+  replacement: (_content, node) => {
     const alt = (node as HTMLElement).getAttribute('alt') || '';
     const src = (node as HTMLElement).getAttribute('src') || '';
     return `![${alt}](${src})`;
@@ -42,7 +42,8 @@ export async function convertDocxToMarkdown(
             const filename = `image_${images.length + 1}.${extension}`;
             
             // Create blob from image data
-            const blob = new Blob([image.buffer], { type: image.contentType });
+            const buffer = await image.read();
+            const blob = new Blob([buffer], { type: image.contentType });
             
             // Store image data
             const imageData: ImageData = {
