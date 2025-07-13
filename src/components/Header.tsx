@@ -24,7 +24,7 @@ export default function Header({ isDarkMode, onToggleDarkMode }: HeaderProps) {
           </button>
           
           <a
-            href="https://github.com/your-username/docx-to-markdown"
+            href="https://github.com/OPAYA/docx-to-markdown"
             target="_blank"
             rel="noopener noreferrer"
             className="github-link"
