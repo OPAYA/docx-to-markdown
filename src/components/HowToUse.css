@@ -1,0 +1,202 @@
+.how-to-use {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.help-button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.help-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.4);
+}
+
+.guide-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  padding: 2rem;
+}
+
+.guide-modal {
+  background: var(--panel-bg);
+  border-radius: 1rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+}
+
+.guide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.guide-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: var(--hover-bg);
+}
+
+.guide-content {
+  padding: 1.5rem;
+}
+
+.guide-steps {
+  margin-bottom: 2rem;
+}
+
+.guide-step {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  background: var(--primary-color);
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.step-content p {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.step-content ul {
+  margin: 0.5rem 0 0 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.step-content li {
+  margin-bottom: 0.25rem;
+}
+
+.step-content strong {
+  color: var(--text-primary);
+}
+
+.guide-tips {
+  background-color: var(--tip-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--tip-border);
+}
+
+.guide-tips h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.guide-tips ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.guide-tips li {
+  margin-bottom: 0.5rem;
+}
+
+/* CSS Variables */
+.app.light {
+  --tip-bg: #f0f9ff;
+  --tip-border: #bae6fd;
+}
+
+.app.dark {
+  --tip-bg: #1e293b;
+  --tip-border: #334155;
+}
+
+@media (max-width: 768px) {
+  .how-to-use {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  .help-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .guide-overlay {
+    padding: 1rem;
+  }
+  
+  .guide-modal {
+    max-height: 90vh;
+  }
+  
+  .guide-header,
+  .guide-content {
+    padding: 1rem;
+  }
+  
+  .guide-step {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .step-number {
+    align-self: flex-start;
+  }
+}
