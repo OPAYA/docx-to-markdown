@@ -42,3 +42,6 @@ dist/
 .DS_Store
 Thumbs.db
 .vercel
+
+# Google Search Console verification
+google*.html
